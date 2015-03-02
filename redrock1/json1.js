@@ -1,3 +1,4 @@
+//创造一个Onload函数
 function addLoadEvent(func) {
 	var oldonload = window.onload;
 	if (typeof window.onload != "function"){
@@ -9,6 +10,7 @@ function addLoadEvent(func) {
 		}
 	}
 }
+//验证请求是否兼容
 function getHTTPObject () {
 	if (typeof XMLHttpRequest == "undefined")
 		XMLHttpRequest = function (){
@@ -21,6 +23,7 @@ function getHTTPObject () {
 		}
 		return new XMLHttpRequest();
 }
+//开始请求并处理数据，动态建立HTML页面
 function getDate(){
 	var request = getHTTPObject();
 	if(request) {

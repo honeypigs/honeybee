@@ -20,6 +20,9 @@ body {
 		border: 1px solid gray;
 		border-radius: 5px;
 	}
+	#font{
+		border-bottom: 4px double gray;
+	}
 	#color-control{
 		position: absolute;
 		top: 10px;
