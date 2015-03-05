@@ -1,0 +1,17 @@
+
+#experiment{
+	-moz-perspective: 800px;
+	-moz-perspective-origin:50% 50%;
+	-moz-transform-style:-moz-perspective-3d;
+}
+#block{
+	width: 500px;
+	height:500px;
+	background-color: #69c;
+	margin: 50px auto;
+	-moz-transition:background-color 2s;
+	-moz-transform:rotateX(45deg);
+}
+#block:hover{
+	background-color: red;
+}

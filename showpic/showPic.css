@@ -15,6 +15,9 @@ p{
 }
 
 #static_div{
+	-webkit-box-shadow:0px 0px 15px green;
+	-moz-box-shadow:0px 0px 15px green;
+	box-shadow: 0px 0px 15px green;
 	margin: 50px 440px;
 	width: 400px;
 	overflow: hidden;
@@ -54,6 +57,9 @@ p{
 	position: absolute;
 }
 .dot{
+	-webkit-box-shadow:0px 0px 15px red;
+	-moz-box-shadow:0px 0px 15px red;
+	box-shadow: 0px 0px 15px red;
 	background-color: pink;
 	float: left;
 	width: 60px;
