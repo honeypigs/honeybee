@@ -2,7 +2,8 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 canvas.style.backgroundColor = "black";
 var IMG =  new Image();
-IMG.src = "0.jpg";
+var i = 2014211840 + parseInt(Math.random() * 33);
+IMG.src = "http://jwzx.cqupt.edu.cn/showstuPic.php?xh=" + i;
 var speed = 50;
 var timer = 0;
 var light= {
@@ -17,7 +18,7 @@ function drawLight(cxt){
 	cxt.beginPath();
 	cxt.arc(light.x,light.y,light.r,0,2*Math.PI);
 	cxt.fillStyle = "white";
-	cxt.fill();
+	//cxt.fill();
 	cxt.clip();
 	drawPic(context);
 	cxt.restore();
@@ -34,7 +35,7 @@ stop.onclick = function(){
 }
 
 function upDate(){
-	context.clearRect(0,0,800,600);
+	//context.clearRect(0,0,800,600);
 	light.x += light.vx;
 	light.y += light.vy;
 	if (light.x >= canvas.width - light.r) {
