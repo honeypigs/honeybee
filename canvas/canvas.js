@@ -20,9 +20,9 @@ window.onload = function(){
 	//绘制标题渐变样式
 	var style = fontext.createLinearGradient(300,0,450,0);
 	style.addColorStop(0.0,"red");
-	style.addColorStop(0.25,"orange");
-	style.addColorStop(0.5,"yellow");
-	style.addColorStop(0.75,"green");
+	//style.addColorStop(0.25,"orange");
+	//style.addColorStop(0.5,"yellow");
+	//style.addColorStop(0.75,"green");
 	style.addColorStop(1.0,"purple");
 	fontext.font ="bold 50px Arial";
 	fontext.fillStyle = style;
