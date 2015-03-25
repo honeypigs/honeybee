@@ -18,7 +18,6 @@ function drawLight(cxt){
 	cxt.beginPath();
 	cxt.arc(light.x,light.y,light.r,0,2*Math.PI);
 	cxt.fillStyle = "white";
-	//cxt.fill();
 	cxt.clip();
 	drawPic(context);
 	cxt.restore();
@@ -35,7 +34,7 @@ stop.onclick = function(){
 }
 
 function upDate(){
-	//context.clearRect(0,0,800,600);
+	//context.clearRect(0,0,800,600);//决定是擦除还是圆球
 	light.x += light.vx;
 	light.y += light.vy;
 	if (light.x >= canvas.width - light.r) {
