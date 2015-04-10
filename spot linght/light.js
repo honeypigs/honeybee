@@ -2,8 +2,8 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 canvas.style.backgroundColor = "black";
 var IMG =  new Image();
-var i = 2014211840 + parseInt(Math.random() * 33);
-IMG.src = "http://jwzx.cqupt.edu.cn/showstuPic.php?xh=" + i;
+var i = 2014213791 + parseInt(Math.random() * 100);
+IMG.src = "http://jwzx.cqupt.edu.cn/showstuPic.php?xh=" + i ;
 var speed = 50;
 var timer = 0;
 var light= {

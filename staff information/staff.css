@@ -1,0 +1,70 @@
+body,p,nav,div,footer,input,hr{
+	font-family: Arial sans-serif ;
+	margin: 0px;
+}
+body{
+	height: 600px;
+	width: 1200px;
+	text-align: center;
+	margin: 0px auto;
+}
+nav{
+	height: 60px;
+}
+nav p{
+	float: left; 
+	margin-left: 60px;
+	margin-top: 16px;
+	width: 300px;
+	font-size: 1em;
+}
+nav input{
+	float:right;
+	width: 240px;
+	margin-top: 16px;
+	margin-right: 60px;
+}
+#all_card{
+	position: relative;
+	height: 480px;
+	overflow: hidden;
+}
+.card{
+	float: left;
+	width:  238px;
+	height:  142px;
+	border: 1px solid gray ;
+}
+.delet{
+	width: 20px;
+	height: 20px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-color: gray;
+	color:red;
+}
+footer{
+	text-align: center;
+	color:cyan;
+}
+#information_left{
+	position: absolute;
+	background-color: white;
+	left: -605px;
+	top: 12px;
+	width: 600px;
+	height: 454px;
+	border: 2px solid blue ; 
+	z-index: 10;
+}
+#information_right{
+	position: absolute;
+	background-color: white;
+	right: -605px;
+	top: 12px;
+	width: 600px;
+	height: 454px;
+	border: 2px solid blue ; 
+	z-index: 10;
+}
