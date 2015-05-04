@@ -3,7 +3,7 @@ function showNumber(i,j,num){
 	numberCell.style.backgroundColor = getNumberBgColor(num);
 	numberCell.style.color = getNumberColor(num);
 	var numberCell_txt = document.createTextNode(num);
-	numberCell.appendChild(numberCell_txt);0
+	numberCell.appendChild(numberCell_txt);
 	$("#number-cell-" + i +'-'+j ).animate({
 		width: 100 + "px",
 		height: 100 + "px"

@@ -8,6 +8,7 @@ function GIF(speed,imgName,imgNumber,imgFormat){
 		img.src = "img/" + imgName + i + "." +imgFormat;
 		IMG.push(img);
 	}
+	console.log(IMG);
 	var Obj = {
 		Stop : document.getElementById("stop"),
 		Start : document.getElementById("start"),
@@ -27,15 +28,15 @@ function GIF(speed,imgName,imgNumber,imgFormat){
 			drawPic();
 		},1000/speed);
 	}
-	console.log(Obj.flag);
 
 	function drawPic(){
-		context.drawImage(IMG[i],120,120);
+		context.clearRect(0,0,400,600);
+		context.drawImage(IMG[i],50,50);
 	}
 
 	function update(){
 		i += 1;
-		if (i > 9) {
+		if (i >= imgNumber) {
 			i = 0;
 		}
 	}
@@ -52,4 +53,4 @@ function GIF(speed,imgName,imgNumber,imgFormat){
 	}
 }
 
-GIF(10,"text",9,"png"); 
+GIF(6,"",13,"png"); 

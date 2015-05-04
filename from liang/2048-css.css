@@ -1,0 +1,40 @@
+.body,div{
+	margin: 0;
+	padding: 0;
+}
+.border{
+	width: 635px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	background-color: #bbada0; 
+	border-radius: 6px;
+	position: relative;
+}
+.border div{
+	width: 140px;
+	height: 140px;
+	float: left;
+	margin: 15px 0 0 15px;
+	background: rgb(205, 193, 180);
+	border-radius: 6px;
+}
+.border:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+.border .element{
+	width: 140px;
+	height: 140px;
+	line-height: 140px;
+	z-index: 1;
+	color: rgb(119,110,101);
+	margin: 0;
+	padding: 0 ;
+	opacity: 0;
+	position: absolute;
+	text-align: center;;
+	font-size: 80px;
+	font-weight: bold;
+	background: rgb(238,228,218);
+}

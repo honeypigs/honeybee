@@ -1,0 +1,39 @@
+<script type="text/javascript">
+	function WhoAmI(){		//定义一个函数WhoAmI
+		alert("I'm "+ this.name + "of " + typeof(this));
+	};
+
+	WhoAmI();//此时this的对象是window，其name属性为空字符串。
+			 //输出 I'm of object
+
+	var BillGates = {name : "Bill Gates"};
+	BillGates.WhoAmI = WhoAmI ; 		//将函数WhoAmI作为BillGates的方法
+	BillGates.WhoAmI(); 				//this是BillGates;
+										//输出I'm Bill Gates of objec
+
+	var SteveJobs = {name : "Steve Jobs"};
+	SteveJobs.WhoAmI = WhoAmI ; 		//将函数WhoAmI作为SteveJobs的方法
+	SteveJobs.WhoAmI(); 				//this是SteveJobs;
+										//输出I'm Steve Jobs of objec
+
+	WhoAmI.call(BillGates);				//直接将BillGates作为this调用WhoAmI
+										//输出I'm Bill Gates of objec
+
+	WhoAmI.call(SteveJobs);				//直接将SteveJobs作为this调用WhoAmI
+										//输出I'm Steve Jobs of objec
+
+	BillGates.WhoAmI.call(SteveJobs);	//将SteveJobs 作为this，却调用BillGates的方法
+										//输出输出I'm Steve Jobs of objec
+
+	SteveJobs.WhoAmI.call(BillGates);	//将BillGates 作为this，却调用SteveJobs的方法
+										//输出输出I'm Bill Gates of objec
+
+	WhoAmI.WhoAmI = WhoAmI;				//将WhoAmI设置为自身的方法
+	WhoAmI.name = "WhoAmI";
+	WhoAmI.WhoAmI();					//此时WhoAmI是自己
+										//输出I'm WhoAmI of function
+
+	({name : "nobody", WhoAmI : WhoAmI}).WhoAmI();
+										//创建一个匿名对象并调用其方法
+										//输出I'm nobody of object
+</script>

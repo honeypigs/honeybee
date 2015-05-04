@@ -119,7 +119,7 @@ function moveLeft(){
 						showMoveAnimation(i,j,k);
 						board[i][k] = board[i][j];
 						board[i][j] = 0;
-						continue;
+						break;
 					}
 					else if(board[i][k] == board[i][j] && noBlockHorizontal(i,k,j,board)){
 						//move
@@ -127,12 +127,13 @@ function moveLeft(){
 						//add
 						board[i][k] = board[i][k] + board[i][j];
 						board[i][j] = 0;
+						showNumber(i,k,board[i][k]);
+						break
 					}
 				}
 			}
 		}
 	}
-	//updataBoardView();
 	return true;
 }
 function isGameOver(){
