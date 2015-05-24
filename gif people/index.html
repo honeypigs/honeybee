@@ -8,12 +8,6 @@
 		body{
 			text-align: center;
 		}
-		div{
-			margin: 50px auto;
-			width: 400px;
-			height: 600px;
-			margin: 0 auto;
-		}
 		button{
 			display: inline-block;
 			margin: 0 auto;
@@ -23,6 +17,10 @@
 			border: 1px gray solid;
 			background-color: rgb(230,210,137);
 		}	
+		.canvas{
+			height: 500px;
+			width: 1000px;
+		}
 	</style>
 
 </head>
@@ -31,8 +29,10 @@
 	<div>
 		<button id = "start"> start </button>
 		<button id = "stop"> stop</button>
-		<canvas id = "canvas" width = "400" height = "600"></canvas>
+		<div class = "canvas"><canvas id = "canvas"></canvas></div>
 	</div>
+	<script type="text/javascript" src = "jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src = "gif.js"></script>
+	
 </body>
 </html>
