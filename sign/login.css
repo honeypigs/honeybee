@@ -1,0 +1,137 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: rgba(0,0,0,0.4);
+	font-family: arial,"Microsoft YaHei",Helvetica,sans-serif;
+}
+
+.wrapper {
+	height: 300px;
+	width: 400px;
+	position: absolute;
+	margin: auto;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.wrapper .head {
+	background-color: #FFF678;
+	height: 50px;
+}
+
+.wrapper .head .headMsg ,
+.wrapper .head .headMsg a {
+	color: #BFBFBF;
+	display: block;
+	height: inherit;
+	float: left;
+	line-height: 50px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.wrapper .head .headMsg a {
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.wrapper .head .headMsg a:hover {
+	color:#fff;
+}
+
+#close {
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	background-color: #ddd;
+	display: inline-block;
+	float: right;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	margin: 15px 10px 0 0;
+	font-weight: bold;
+}
+
+#close:hover {
+	background-color:red;
+}
+
+#sign {
+	height: 250px;
+	background-color: #D8E89E;
+	display: none;
+}
+
+#sign div{
+	height: 40px;
+	line-height: 40px;
+}
+
+#sign .msg {
+	height: 20px;
+	line-height: 20px;
+	margin-left: 80px;
+}
+
+#sign label {
+	float: left;
+	display: inline-block;
+	height: inherit;
+	width: 230px;
+	text-align: right;
+}
+
+#sign label input:focus {
+	box-shadow:  0 0 2px red;
+}
+
+#sign p{
+	float: left;
+	font-size: 0.7em;
+	display: none;
+}
+
+#sign b {
+	font-size: 0.7em;
+	display: none;
+}
+
+em {
+	height: inherit;
+	display: inline-block;
+	width: 45px;
+	background-color: #eee;
+	margin-left: 3px;
+	text-align: center;
+	color: #fff;
+}
+
+.active {
+	background-color: #FF3E11;
+}
+
+#sign .submit{
+	line-height: 30px;
+	height: 30px;
+	width: 60px;
+	margin: 20px auto;
+	text-align: center;
+	border-radius: 5px;
+	color: #888;
+}
+
+#sign .submit input {
+	height: inherit;
+	width: 60px;
+	background-color: #FFF678;
+	cursor: pointer;
+	border: 0;
+}
+
+#sign .submit input:hover {
+	color: #fff;
+	box-shadow:  0 0 5px blue;
+}
