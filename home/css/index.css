@@ -49,6 +49,8 @@ li{
 	width: 300px;
 }
 .nav .index a{
+	background: #d0ea59;
+	color: #50930c;
 	width: 72px;
 }
 .nav li a:hover {

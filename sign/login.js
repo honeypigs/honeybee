@@ -2,6 +2,7 @@ window.onload = function (){
 	var sign = document.getElementById("sign");
 	var close = document.getElementById("close");
 	var signUp = document.getElementById("signUp");
+	var submit = document.getElementById("submit");
 	var aInput = sign.getElementsByTagName("input");
 	var userName = aInput[0];
 	var pwd = aInput[1];
@@ -13,6 +14,7 @@ window.onload = function (){
 	var count = document.getElementById("count");
 	var aEm = document.getElementsByTagName("em");
 	var name_length = 0;
+	var flag = 0;
 
 	//界面的出现于隐藏
 		signUp.onclick = function() {
@@ -62,6 +64,7 @@ window.onload = function (){
 		else{
 			name_msg.innerHTML = "OK";
 			name_msg.style.color = "green";
+			flag = 1;
 		}
 
 
@@ -138,6 +141,7 @@ window.onload = function (){
 		else {
 			pwd_msg.innerHTML = "OK";
 			pwd_msg.style.color = "green";
+			flag = 2;
 		}
 
 	}
@@ -151,9 +155,17 @@ window.onload = function (){
 		}else {
 			pwd2_msg.innerHTML = "OK";
 			pwd2_msg.style.color = "green";
+			flag =3;
 		}
 	}
 
+	//
+	submit.onmouseover = function() {
+		console.log(flag);
+		if (flag == 3) {
+			submit.setAttribute("type","submit");
+		}
+	}
 
 
 

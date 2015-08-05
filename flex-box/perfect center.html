@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<title>Prefect Center</title>
+		<mate charset = "utf-8">
+		<style type="text/css">
+
+		li {
+			list-style-type: none;
+			background-color: rgb(255,99,71);
+			height: 50px;
+			width: 50px;
+			color: white;
+			font-size: 3em;
+		}
+
+		/*
+		最普通的居中方法————但是无法实现响应式设计
+
+		.parent {
+			display: flex;
+			height: 300px;  Or whatever 
+		}
+
+		.child {
+			width: 100px;  /* Or whatever 
+			height: 100px; /* Or whatever 
+			margin: auto;  /* Magic! 
+		}	*/
+
+		/*
+		用了flex布局写的具有流动性可以具有一定的自适应性
+		.parent {
+			/*我们第一步要创建一个flex文档流（创建伸缩容器）*
+			display: flex;
+
+  			/* 然后我们定义伸缩流方向，并且可以换行
+ 			  * 记得我们要这样设置:
+ 			  * flex-direction: row;
+ 			  * flex-wrap: wrap;
+ 			  
+  			flex-flow: row wrap;
+
+  			 /* 然后我们定义了如何分配伸缩容器的剩余空间 
+ 			 justify-content: center;
+		}	*/
+		.parent {
+			display: flex;
+			flex-flow: row wrap;
+			/* 所有列面向主轴终点位置靠齐 */
+			justify-content: flex-end;
+		}
+
+		/* Medium screens */
+		@media all and (max-width: 800px) {
+			.parent {
+				/* 当在中等屏幕中, 导航项目居中显示，并且剩余空间平均分布在列表之间 */
+				justify-content: space-around;
+			}
+		}
+
+		/* Small screens */
+		@media all and (max-width: 500px) {
+			.parent {
+				/* 在小屏幕下, 我们没有足够空间行排列，但我们可以换成列排列 */
+				flex-direction: column;
+			}
+		}	
+		</style>
+	</head>
+	<body>
+		<ul class = "parent">
+			<li class = "child">1</li>
+			<li class = "child">2</li>
+			<li class = "child">3</li>
+			<li class = "child">4</li>
+			<li class = "child">5</li>
+			<li class = "child">6</li>
+		</ul>
+
+	</body>
+	</html>
