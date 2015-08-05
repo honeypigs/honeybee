@@ -184,14 +184,14 @@
 	    		if(seconds < 10){
 	    			seconds = "0" + seconds;
 	    		}
-    			dayH.children[0].innerHTML = (day + "").slice(0,1);
-    			dayH.children[1].innerHTML = (day + "").slice(1,2);
-    			houtH.children[0].innerHTML = (hour + "").slice(0,1);
-    			houtH.children[1].innerHTML = (hour + "").slice(1,2);
-    			branchH.children[0].innerHTML = (branch + "").slice(0,1);
-    			branchH.children[1].innerHTML = (branch + "").slice(1,2);
-    			secondsH.children[0].innerHTML = (seconds + "").slice(0,1);
-    			secondsH.children[1].innerHTML = (seconds + "").slice(1,2);
+    			dayH.children[0].src = 'image/num'+(day + "").slice(0,1)+".png";
+    			dayH.children[1].src = 'image/num'+(day + "").slice(1,2)+".png";
+    			houtH.children[0].src = 'image/num'+(hour + "").slice(0,1)+".png";
+    			houtH.children[1].src = 'image/num'+(hour + "").slice(1,2)+".png";
+    			branchH.children[0].src = 'image/num'+(branch + "").slice(0,1)+".png";
+    			branchH.children[1].src = 'image/num'+(branch + "").slice(1,2)+".png";
+    			secondsH.children[0].src = 'image/num'+(seconds + "").slice(0,1)+".png";
+    			secondsH.children[1].src = 'image/num'+(seconds+ "").slice(1,2)+".png";        
     	}
     	timer();
     	setInterval(timer,1000);
@@ -314,10 +314,11 @@
             constant(c5,{"right":50},5000,c5L);
         }
         function c5L(){
-            constant(c5,{"right":-70},5000,c5R);
+            constant(c5,{"right":20},2000,c5R);
         }
         c1R();
         c5R();
+
             
     })();
 

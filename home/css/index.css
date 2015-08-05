@@ -1,15 +1,18 @@
-body,div,p,ul,li{
+body,div,p,ul,li,img{
 	margin: 0;
 	padding: 0;
 }
 body{
+	background-repeat: no-repeat !important;
 	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
 }
 li{ 
 	list-style: none;
 }
-.header, .timer, .container ,.footer,.big_header{
+.header, .container ,.footer,.big_header{
 	width: 100%;
+	min-width: 960px;
+	overflow: hidden;
 }
 .header{
 	z-index: 100;
@@ -45,20 +48,22 @@ li{
 	color:#333333;
 	font-weight: bold;
 }
+
+.nav li a:hover {
+	background: #d0ea59;
+	color: #50930c;
+}
 .nav .cqupt{
 	width: 300px;
 }
 .nav .index a{
-	background: #d0ea59;
-	color: #50930c;
 	width: 72px;
-}
-.nav li a:hover {
 	background: #d0ea59;
 	color: #50930c;
 }
 .nav .last a{
 	width: 88px;
+	text-align: right;
 }
 .cqupt img{
 	float: left;
@@ -71,10 +76,12 @@ li{
 	clear: both;
 }
 .timer{
+	width: 100%;
+	min-width: 960px;
 	height: 528px;
 	position: relative;
 }
-.timer > img{
+.timer .t_bg{
 	width: 100%;
 	min-width: 960px;
 	height: 528px;
@@ -118,16 +125,17 @@ li{
 	color: #2c98ca;
 	position: relative;
 }
-.count_down div p .number span{
-	margin-right: 4px;
-	padding:1px 3px;
+.count_down div p .number img{
+	margin-right:-4px;
 	background: #ffffff;
 	border-radius: 6px;
-	color: #ffb608;
+	width: 26px;
+	height: 42px;
+    top: 7px;
+	position: relative;
 }
 .count_down div p .timer{
 	font-size: 22px;
-	margin-left: -8px;
 	top: -2px;
 
 }
@@ -149,11 +157,13 @@ li{
 }
 .cloud05{
 	top: 223px;
-	right: -30px;
+	right: 20px;
 }
 .line{
+	width: 100%;
+	height: 2085px;
+	position: absolute;
 	top: 434px;
-	left: -44px;
 	z-index: 0;
 }
 .stone{
@@ -392,7 +402,7 @@ li{
 #go_top{
 	position: fixed;
 	right: 40px;
-	bottom: 200px;
+	bottom: 300px;
 	display: block;
 	width: 78px;
 	height: 96px;
