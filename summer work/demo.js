@@ -344,7 +344,7 @@ function getStyle(target,style){
 					arr = this.elementArray;
 				forEach(arr,function(item,index,array){
 					animation.move(item,{"left":(index - count) * width + ""},200);
-				})
+				}).function() {};
 				this.count = num;
 				if(this.callbackElementArray.length > 1){
 					this.callBack();
