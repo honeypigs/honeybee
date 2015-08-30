@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0">
+	<title>Document</title>
+	<script src="http://g.alicdn.com/kissy/k/1.4.7/seed.js" data-config="{combine:true}"></script>
+</head>
+<style>
+	body,div {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	#container {
+		position: absolute;
+		width: 300%;
+		height: 500px;
+		overflow: hidden;
+	}
+	.section {
+		float: left;
+		position: relative;
+		width: 33.333%;
+		height: 500px;
+	}
+	#section0 {
+		background-color: #0ff;
+	}
+	#section1 {
+		background-color: #f0f;
+	}
+	#section2 {
+		background-color: #ff0;
+	}
+
+	#pages{
+		position:fixed;
+		left: 80%;
+		top: 18%;
+		list-style: none;
+	}
+	#pages li{
+		float: left;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #fff;
+		margin: 0 5px;
+	}
+	#pages li.active{
+		width: 20px;
+		height: 20px;
+		border: 2px solid red;
+		background: black;
+		margin-left: 0;
+	}
+
+</style>
+<body>
+	<div id="container">
+			<div id="section0" class="section"></div>
+			<div id="section1" class="section"></div>
+			<div id="section2" class="section"></div>
+	</div>
+
+	<script src = "move_carousel.js"></script>
+</body>
+</html>
