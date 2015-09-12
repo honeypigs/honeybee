@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	function WhoCallMe(){
+		alert("My call is" + WhoCallMe.caller);//输出自己的caller
+	};
+
+	function CallerA(){WhoCallMe();};
+
+	function CallerB(){WhoCallMe();};
+
+	alert(WhoCallMe.caller);//输出NULL
+
+	WhoCallMe();//输出：my caller is null
+	CallerA();//输出：my caller is function CallerA(){WhoCallMe();};
+	CallerB(); //输出：my caller is function CallerB(){WhoCallMe();};
+</script>
